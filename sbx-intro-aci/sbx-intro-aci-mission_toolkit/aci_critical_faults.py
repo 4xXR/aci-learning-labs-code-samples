@@ -48,19 +48,17 @@ while faults_obj.has_faults(session):
                     # MISSION: Each fault object has several properties describing the fault.
                     #          The properties are: type, severity, descr, rule, dn, & domain
                     #          Complete each line below with the correct property.
-                    # #          The first two are already complete.
-                    # message.append( "****************")
-                    # message.append( "    Description         : " + fault.descr)
-                    # message.append( "    Distinguished Name  : " + fault.dn)
-                    # message.append( "    Rule                : " + fault.rule)
-                    # message.append( "    Severity            : " + fault.severity)
-                    # message.append( "    Type                : " + fault.type)
-                    # message.append( "    Domain              : " + fault.mm)
-                    # print("\n".join(message))
+                    #          The first two are already complete.
+                    message.append( "****************")
+                    message.append( "    Description         : " + fault.descr)
+                    message.append( "    Distinguished Name  : " + fault.dn)
+                    message.append( "    Rule                : " + fault.rule)
+                    message.append( "    Severity            : " + fault.severity)
+                    message.append( "    Type                : " + fault.type)
+                    message.append( "    Domain              : " + fault.domain)
+                    print("\n".join(message))
 
 
 # Print completion message
-#print("{} Faults were found.\n  {} listed above are critical".format(fault_count["total"],
-#                                                                             fault_count["critical"]))
-
-print(dir(fault.type))
+print("{} Faults were found.\n  {} listed above are critical".format(fault_count["total"],
+                                                                             fault_count["critical"]))
